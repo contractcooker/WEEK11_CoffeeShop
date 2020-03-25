@@ -1,20 +1,41 @@
 ﻿
+@model CoffeeShop.Models.RegistrationForm
+
 @{
     ViewData["Title"] = "Registration Form";
 }
 
 <h1>Register Here</h1>
+@{
+    if (ViewData["errorMsg"] != null)
+    {
+        <p><strong>@ViewData["errorMsg"]</strong></p>
+    }
+}
+<form asp-controller="Register" asp-action="Register" method="post">
+    @Html.LabelFor(m => m.FirstName): @Html.EditorFor(m => m.FirstName, new { @class = "form-control-lg" })<br />
 
-<form action="/Register/Register" method="post">
-    First Name: <input type="text" name="fname" maxlength="20" /><br />
+    @Html.LabelFor(m => m.LastName): @Html.EditorFor(m => m.LastName)<br />
 
-    Last Name: <input type="text" name="lname" maxlength="20" /><br />
+    @Html.LabelFor(m => m.Password): @Html.EditorFor(m => m.Password)<br />
 
-    Email: <input type="email" name="email" /><br />
+    @Html.LabelFor(m => m.Email): <input asp-for="Email" /><br />
 
-    Password: <input type="text" name="password" maxlength="20" /><br />
+    @Html.LabelFor(m => m.Dob): @Html.EditorFor(m => m.Dob)<br />
 
-   
+    @Html.LabelFor(m => m.FavoriteBlend):
+    <select asp-for="FavoriteBlend">
+        @{
+            string[] flavors = MenuItems.CoffeeBlends;
+            foreach (string f in flavors)
+            {
+                <option>@f</option>
+            }
+        }
+    </select>
+
+    @Html.LabelFor(m => m.ReceiveEmails):
+    @Html.CheckBoxFor(m => m.ReceiveEmails)
     <br />
 
     <input type="submit" value="REGISTER" />

@@ -1,7 +1,18 @@
-﻿
+﻿@model CoffeeShop.Models.RegistrationForm
 @{
     ViewData["Title"] = "Register";
 }
 
 <h1>Registration Complete!</h1>
-Welcome @ViewData["name"] 
+Welcome  @Model.FirstName @Model.LastName . 
+<br />
+<br />
+Registration info:
+<br />
+Email: @Model.Email
+<br />
+Birthdate: @Model.Dob
+<br />
+Favorite Flavor: @Model.FavoriteBlend
+<br />
+

@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\barro\\Documents\\GitHub\\WEEK11_CoffeeShop\\CoffeeShop\\CoffeeShop.csproj": {}
+    "C:\\Users\\tbarron\\source\\repos\\CoffeeShop\\CoffeeShop\\CoffeeShop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\barro\\Documents\\GitHub\\WEEK11_CoffeeShop\\CoffeeShop\\CoffeeShop.csproj": {
+    "C:\\Users\\tbarron\\source\\repos\\CoffeeShop\\CoffeeShop\\CoffeeShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\barro\\Documents\\GitHub\\WEEK11_CoffeeShop\\CoffeeShop\\CoffeeShop.csproj",
+        "projectUniqueName": "C:\\Users\\tbarron\\source\\repos\\CoffeeShop\\CoffeeShop\\CoffeeShop.csproj",
         "projectName": "CoffeeShop",
-        "projectPath": "C:\\Users\\barro\\Documents\\GitHub\\WEEK11_CoffeeShop\\CoffeeShop\\CoffeeShop.csproj",
-        "packagesPath": "C:\\Users\\barro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\barro\\Documents\\GitHub\\WEEK11_CoffeeShop\\CoffeeShop\\obj\\",
+        "projectPath": "C:\\Users\\tbarron\\source\\repos\\CoffeeShop\\CoffeeShop\\CoffeeShop.csproj",
+        "packagesPath": "C:\\Users\\tbarron\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tbarron\\source\\repos\\CoffeeShop\\CoffeeShop\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\barro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tbarron\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -61,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
